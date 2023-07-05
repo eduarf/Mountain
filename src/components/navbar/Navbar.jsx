@@ -1,9 +1,8 @@
-import { Link, useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 import Button from "../button/Button";
 import "./Navbar.scss";
 
 const Navbar = () => {
-  const { pathname } = useLocation();
 
   const CustomLink = ({ to, name }) => {
     return <Link to={to} className="link">{name}</Link>;

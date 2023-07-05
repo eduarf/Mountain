@@ -25,6 +25,10 @@
             font-weight: 500;
             letter-spacing: 0.5px;
             text-decoration: none;
+            transition: all .3s ease;
+            &:hover {
+              color: var(--color-secondary);
+            }
         }
       }
 }

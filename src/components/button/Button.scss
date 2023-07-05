@@ -1,5 +1,5 @@
 .button {
-    padding: 1.2rem 2.5rem;
+    padding: 1.2rem 3rem;
     text-transform: uppercase;
     cursor: pointer;
     background-color: transparent;
@@ -8,7 +8,7 @@
     font-size: 1.6rem;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 400;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
 }
 .primary {
     background-color: var(--color-primary);
@@ -20,6 +20,7 @@
 .secondary {
     background-color: var(--color-white);
     color: var(--color-primary);
+    border: 2px solid transparent;
     &:hover{
         background-color: var(--color-secondary);
         color: var(--color-white);
