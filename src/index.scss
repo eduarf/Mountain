@@ -1,0 +1,45 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Playfair Display', serif;
+}
+html {
+  font-size: 62.5%;
+}
+html {
+  --color-primary: rgb(26,108,122);
+  --color-primary-rgba: rgba(26,108,122, .7);
+  --color-secondary: rgb(21,50,67);
+  --color-secondary-rgba: rgba(21,50,67,0.6);
+  --color-black: rgb(21,14,31);
+  --color-gray: rgb(88,77,102);
+  --color-white: rgb(243,241,246);
+}
+
+html[theme-mode="purple"] {
+  --color-primary: rgb(142,67,240);
+  --color-secondary: rgb(99,0,226);
+  --color-black: rgb(21,14,31);
+  --color-gray: rgb(88,77,102);
+  --color-white: rgb(243,241,246);
+}
+
+
+// placeholders
+
+.bg {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sec-padding {
+  padding: 6vh 4vw;
+}

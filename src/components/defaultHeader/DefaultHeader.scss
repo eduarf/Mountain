@@ -1,0 +1,21 @@
+.default-header {
+    height: 50vh;
+    background-image: linear-gradient(var(--color-primary-rgba), var(--color-secondary-rgba)), url('../../assets/mountain.jpeg');
+    background-position: top;
+    background-size: cover;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    .path {
+        font-size: 4rem;
+        text-transform: uppercase;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-weight: 700;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        letter-spacing: 1px;
+        color: var(--color-white);
+    }
+}

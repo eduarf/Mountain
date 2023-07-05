@@ -1,0 +1,30 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3rem 10rem;
+    position: absolute;
+    width: 100%;
+    .svg-icon {
+        height: 5rem;
+        width: 5rem;
+        mask-image: url(../../assets/mountain-logo.svg);
+        -webkit-mask-image: url(../../assets/mountain-logo.svg);
+        mask-size: cover;
+        -webkit-mask-size: cover;
+        background-color: var(--color-white);
+      }
+      .list {
+        display: flex;
+        align-items: center;
+        gap: 4rem;
+        .link {
+            font-size: 1.6rem;
+            color: var(--color-white);
+            cursor: pointer;
+            font-weight: 500;
+            letter-spacing: 0.5px;
+            text-decoration: none;
+        }
+      }
+}
