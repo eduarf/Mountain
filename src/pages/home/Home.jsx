@@ -1,7 +1,10 @@
 import "./Home.scss";
-import { servicePhotos } from "../../../data";
+import { servicePhotos, photoAlbum } from "../../../data";
 import Button from "../../components/button/Button";
+import { useState } from "react";
+import AlbumDetail from "../../components/albumDetail/AlbumDetail";
 const Home = () => {
+  const [isOpen, setIsOpen] = useState(false);
   return (
     <div>
       {/* Service Section */}
@@ -45,15 +48,22 @@ const Home = () => {
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
           tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
         </p>
-        <Button name='contact' buttonType='tertiary' />
+        <Button name="contact" buttonType="tertiary" />
       </div>
       {/*  */}
 
       {/* Photo albume */}
       <div className="album-container">
-        
+        {photoAlbum.map((item) => {
+          return (
+            <div key={item.id} className="album">
+              <img src={item.url} alt="mountain" className="album__image" />
+            </div>
+          );
+        })}
       </div>
       {/*  */}
+      { isOpen && <AlbumDetail /> }
     </div>
   );
 };
