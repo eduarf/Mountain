@@ -1,10 +1,12 @@
 import "./Home.scss";
-import { servicePhotos, photoAlbum } from "../../../data";
+import { servicePhotos } from "../../../data";
 import Button from "../../components/button/Button";
-import { useState } from "react";
 import AlbumDetail from "../../components/albumDetail/AlbumDetail";
+import { useDispatch, useSelector } from "react-redux";
+import { openModal } from "../../features/photoModal/modalSlice";
 const Home = () => {
-  const [isOpen, setIsOpen] = useState(false);
+  const { isOpen, allPhoto } = useSelector((store) => store.photoModal);
+  const dispatch = useDispatch();
   return (
     <div>
       {/* Service Section */}
@@ -52,18 +54,20 @@ const Home = () => {
       </div>
       {/*  */}
 
-      {/* Photo albume */}
+      {/* Photo album section */}
       <div className="album-container">
-        {photoAlbum.map((item) => {
+        {allPhoto.map((item) => {
           return (
-            <div key={item.id} className="album">
+            <div key={item.id} className="album" onClick={() => dispatch(openModal(item.id))}>
               <img src={item.url} alt="mountain" className="album__image" />
             </div>
           );
         })}
       </div>
       {/*  */}
-      { isOpen && <AlbumDetail /> }
+      {/* AlbumDetail */}
+      {isOpen && <AlbumDetail />}
+      {/*  */}
     </div>
   );
 };
