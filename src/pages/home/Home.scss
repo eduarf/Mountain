@@ -1,0 +1,93 @@
+.service-container {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 3rem;
+  padding: 10rem 8rem;
+  .service {
+    height: 35rem;
+    position: relative;
+    cursor: pointer;
+    &__img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+    &__header {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 3rem;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: var(--color-white);
+      z-index: 10;
+    }
+    &__filter {
+        top: 0;
+        left: 0;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background: linear-gradient(90deg, var(--color-primary-rgba), var(--color-secondary-rgba));
+        transition: all .3s ease;
+        &:hover {
+            background: linear-gradient(180deg, var(--color-primary-rgba), var(--color-secondary-rgba));
+        }
+    }
+  }
+}
+
+// ********************** FOR YOU SECTION ******************************
+
+.for-you {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    padding: 10rem 8rem;
+    gap: 3rem;
+    &__left {
+        h1 {
+            font-size: 3rem;
+            letter-spacing: 2px;
+            color: var(--color-secondary);
+        }
+    }
+    &__right {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 2rem;
+        font-size: 1.6rem;
+        p {
+            color: var(--color-gray);
+            letter-spacing: .5px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 400;
+        }
+        button {
+            margin-top: 1.5rem;
+        }
+    }
+}
+
+
+// ******************** CALL TO ACTION SECTION **************************
+.call-sec {
+    height: 70vh;
+    background-image: linear-gradient(var(--color-primary-rgba), var(--color-secondary-rgba)), url('../../assets/call-sec-image.jpeg');
+    background-attachment: fixed;
+    flex-direction: column;
+    gap: 3rem;
+    color: var(--color-white);
+    h1 {
+        font-size: 3rem;
+        font-style: italic;
+        letter-spacing: .75px;
+    }
+    p {
+        font-size: 1.6rem;
+        width: 40%;
+        text-align: center;
+        letter-spacing: .5px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+}
