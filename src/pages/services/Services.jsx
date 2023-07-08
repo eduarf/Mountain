@@ -1,6 +1,7 @@
 import "./Services.scss";
-import { servicesItems } from "../../../data";
+import { servicesItems, accordionItems } from "../../../data";
 import Button from '../../components/button/Button';
+import AccordionItem from "../../components/accordionItem/AccordionItem";
 
 const Services = () => {
   return (
@@ -19,7 +20,13 @@ const Services = () => {
           </div>;
         })}
       </div>
-      <div className="services__accordion"></div>
+      <div className="services__accordion">
+        <div className="accordion-container">
+          {accordionItems.map((item) => {
+            return <AccordionItem key={item.id} header={item.header} description={item.description} />
+          })}
+        </div>
+      </div>
     </div>
   );
 };

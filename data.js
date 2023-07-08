@@ -60,6 +60,36 @@ export const servicesItems = [
   },
 ];
 
+export const accordionItems = [
+    {
+        id: nanoid(),
+        header: 'Occaecati simili terafvd que?',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.',
+    },
+    {
+        id: nanoid(),
+        header: 'Massa quosoluta yrvagsv aja?',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.',
+    },
+    {
+        id: nanoid(),
+        header: 'Nam error corrupssa, suspendisse pv ehicula eleifend?',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.',
+    },
+    {
+        id: nanoid(),
+        header: 'Doloremque placeat iaculis, minim adipisicing?',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.',
+    },
+    {
+        id: nanoid(),
+        header: 'Voluptates omnis quasi do esse qui?',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.',
+    },
+    
+    
+];
+
 export const photoAlbum = [
   {
     id: nanoid(),
