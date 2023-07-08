@@ -1,4 +1,5 @@
 import "./About.scss";
+import { BiSolidRightArrow } from "react-icons/bi";
 const About = () => {
   return (
     <div className="about">
@@ -28,6 +29,36 @@ const About = () => {
           <h3>John & Steven</h3>
         </div>
       </div>
+      {/* Mission Vision Values */}
+      <div className="about__purpose">
+        {/* Mission */}
+        <div className="mission">
+          <h2>Mission</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+            tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+          </p>
+        </div>
+        {/* Vision */}
+        <div className="vision">
+          <h2>Vision</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+            tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+          </p>
+        </div>
+
+        {/* Values */}
+        <div className="values">
+          <h2>Values</h2>
+          <ul>
+            <li> <BiSolidRightArrow className="icon" /> <span> Lorem ipsum dolor sit amet </span> </li>
+            <li> <BiSolidRightArrow className="icon" /> <span> Luctus nec ullam corper </span> </li>
+            <li> <BiSolidRightArrow className="icon" /> <span> Pulvinar dapibus leo </span> </li>
+          </ul>
+        </div>
+      </div>
+      {/*  */}
     </div>
   );
 };
