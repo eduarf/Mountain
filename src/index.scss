@@ -22,7 +22,90 @@ html {
 
 html[theme-mode="purple"] {
   --color-primary: rgb(142,67,240);
+  --color-primary-rgba: rgba(142,67,240, .5);
   --color-secondary: rgb(99,0,226);
+  --color-secondary-rgba: rgba(99,0,226,0.6);
+  --color-black: rgb(21,14,31);
+  --color-gray: rgb(88,77,102);
+  --color-white: rgb(243,241,246);
+}
+html[theme-mode='pink'] {
+  --color-primary: rgb(255,66,179);
+  --color-primary-rgba: rgba(255,66,179, .5);
+  --color-secondary: rgb(255,0,153);
+  --color-secondary-rgba: rgba(255,0,153,0.6);
+  --color-black: rgb(21,14,31);
+  --color-gray: rgb(88,77,102);
+  --color-white: rgb(243,241,246);
+}
+html[theme-mode='orange'] {
+  --color-primary: rgb(255,122,61);
+  --color-primary-rgba: rgba(255,122,61, .5);
+  --color-secondary: rgb(255,81,0);
+  --color-secondary-rgba: rgba(255,81,81,0.6);
+  --color-black: rgb(21,14,31);
+  --color-gray: rgb(88,77,102);
+  --color-white: rgb(243,241,246);
+}
+html[theme-mode='green'] {
+  --color-primary: rgb(48,199,181);
+  --color-primary-rgba: rgba(48,199,181, .5);
+  --color-secondary: rgb(0,172,151);
+  --color-secondary-rgba: rgba(0,172,151,0.6);
+  --color-black: rgb(21,14,31);
+  --color-gray: rgb(88,77,102);
+  --color-white: rgb(243,241,246);
+}
+html[theme-mode='turquoise'] {
+  --color-primary: rgb(47,193,255);
+  --color-primary-rgba: rgba(47,193,255, .5);
+  --color-secondary: rgb(8,172,242);
+  --color-secondary-rgba: rgba(8,172,242,0.6);
+  --color-black: rgb(21,14,31);
+  --color-gray: rgb(88,77,102);
+  --color-white: rgb(243,241,246);
+}
+html[theme-mode='blue'] {
+  --color-primary: rgb(65,117,252);
+  --color-primary-rgba: rgba(65,117,252, .5);
+  --color-secondary: rgb(8,74,243);
+  --color-secondary-rgba: rgba(8,74,243,0.6);
+  --color-black: rgb(21,14,31);
+  --color-gray: rgb(88,77,102);
+  --color-white: rgb(243,241,246);
+}
+html[theme-mode='darkgreen'] {
+  --color-primary: rgb(27,174,112);
+  --color-primary-rgba: rgba(27,174,112, .5);
+  --color-secondary: rgb(6,117,46);
+  --color-secondary-rgba: rgba(6,117,46,0.6);
+  --color-black: rgb(21,14,31);
+  --color-gray: rgb(88,77,102);
+  --color-white: rgb(243,241,246);
+}
+html[theme-mode='yellow'] {
+  --color-primary: rgb(249,195,73);
+  --color-primary-rgba: rgba(249,195,73, .5);
+  --color-secondary: rgb(255,177,0);
+  --color-secondary-rgba: rgba(255,177,0,0.6);
+  --color-black: rgb(21,14,31);
+  --color-gray: rgb(88,77,102);
+  --color-white: rgb(243,241,246);
+}
+html[theme-mode='red'] {
+  --color-primary: rgb(255,106,151);
+  --color-primary-rgba: rgba(255,106,151, .5);
+  --color-secondary: rgb(250,3,107);
+  --color-secondary-rgba: rgba(250,3,107,0.6);
+  --color-black: rgb(21,14,31);
+  --color-gray: rgb(88,77,102);
+  --color-white: rgb(243,241,246);
+}
+html[theme-mode='darkred'] {
+  --color-primary: rgb(239,77,72);
+  --color-primary-rgba: rgba(239, 77,72, .5);
+  --color-secondary: rgb(217,7,0);
+  --color-secondary-rgba: rgba(217,7,0,0.6);
   --color-black: rgb(21,14,31);
   --color-gray: rgb(88,77,102);
   --color-white: rgb(243,241,246);
