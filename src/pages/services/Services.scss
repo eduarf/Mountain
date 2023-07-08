@@ -1,0 +1,39 @@
+.services {
+    padding: 8rem 10rem;
+    &__top {
+        display: grid;
+        grid-template-rows: repeat(3, minmax(0, 1fr));
+        gap: 5rem;
+        .service {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 4rem;
+            &__left {
+                display: flex;
+                flex-direction: column;
+                gap: 3rem;
+                align-items: flex-start;
+                justify-content: center;
+                h1 {
+                    font-size: 3rem;
+                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                    font-weight: 500;
+                }
+                p {
+                    font-size: 1.6rem;
+                    font-weight: 400;
+                    color: var(--color-gray);
+                    letter-spacing: .5px;
+                }
+            }
+            &__right {
+                img {
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+    &__accordion {}
+}
