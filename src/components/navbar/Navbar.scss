@@ -25,12 +25,13 @@
     align-items: center;
     justify-content: space-between;
     padding: 3rem 10rem;
-    position: fixed;
+    position: absolute;
     width: 100%;
     @media screen and (max-width: 1024px) {
       padding: 3rem 4rem;
     }
     @media screen and (max-width: 768px) {
+      position: fixed;
       background-color: royalblue;
       height: 100%;
       width: 30rem;
