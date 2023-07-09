@@ -19,6 +19,11 @@ const Navbar = () => {
         <CustomLink to='/contact' name='Contact' />
         <Button buttonType="primary" name="Take Action" />
       </div>
+      <div className="navbar__hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
     </nav>
   );
 };
