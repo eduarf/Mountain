@@ -12,6 +12,11 @@
     &__image{
         height: 80vh;
         width: 80vw;
+        object-fit: cover;
+        @media screen and (max-width: 768px) {
+            height: auto;
+            width: 100vw;
+        }
     }
     &__icon {
         position: absolute;

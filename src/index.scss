@@ -7,6 +7,10 @@
   font-family: 'Playfair Display', serif;
   line-height: 1.6;
 }
+::selection {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+}
 html {
   font-size: 62.5%;
 }

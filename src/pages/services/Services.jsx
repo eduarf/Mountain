@@ -22,6 +22,8 @@ const Services = () => {
       </div>
       <div className="services__accordion">
         <div className="accordion-container">
+          <h1>F.A.Q.</h1>
+          <span>Lorem ipsum dolor sit amet.</span>
           {accordionItems.map((item) => {
             return <AccordionItem key={item.id} header={item.header} description={item.description} />
           })}

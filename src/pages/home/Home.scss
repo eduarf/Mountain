@@ -3,6 +3,10 @@
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 3rem;
   padding: 10rem 8rem;
+  @media screen and (max-width: 1024px){
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    padding: 6rem 4rem;
+  }
   .service {
     height: 35rem;
     position: relative;
@@ -44,11 +48,20 @@
     grid-template-columns: repeat(2, minmax(0, 1fr));
     padding: 10rem 8rem;
     gap: 3rem;
+    @media screen and (max-width: 1024px){
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+    @media screen and (max-width: 768px){
+        padding: 6rem 2rem;
+    }
     &__left {
         h1 {
             font-size: 3rem;
             letter-spacing: 2px;
             color: var(--color-secondary);
+            @media screen and (max-width: 640px){
+                font-size: 2.2rem;
+            }
         }
     }
     &__right {
@@ -57,6 +70,9 @@
         align-items: flex-start;
         gap: 2rem;
         font-size: 1.6rem;
+        @media screen and (max-width: 640px){
+            font-size: 1.4rem;
+        }
         p {
             color: var(--color-gray);
             letter-spacing: .5px;
@@ -100,6 +116,14 @@
     background-color: rgb(243,249,251);
     gap: 3rem;
     padding: 8rem 10rem;
+    @media screen and (max-width: 1024px) {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        padding: 4rem 6rem;
+    }
+    @media screen and (max-width: 768px) {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+        padding: 2rem;
+    }
     .album {
         height: 30rem;
         cursor: pointer;
