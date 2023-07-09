@@ -1,59 +1,93 @@
-.navbar {
+.nav-container {
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    cursor: pointer;
+    position: fixed;
+    left: 4rem;
+    top: 4rem;
+    display: none;
+    z-index: 2550;
+    @media screen and (max-width: 768px) {
+      display: flex;
+    }
+    span {
+      height: 5px;
+      width: 4rem;
+      background-color: var(--color-white);
+      border-radius: 3px;
+      transition: all 0.3s ease;
+    }
+  }
+  .navbar {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 3rem 10rem;
-    position: absolute;
+    position: fixed;
     width: 100%;
-    @media screen and (max-width: 1024px){
+    @media screen and (max-width: 1024px) {
       padding: 3rem 4rem;
     }
-    &__hamburger {
-      display: flex;
+    @media screen and (max-width: 768px) {
+      background-color: royalblue;
+      height: 100%;
+      width: 30rem;
       flex-direction: column;
-      gap: .5rem;
-      cursor: pointer;
-      position: absolute;
-      right: 3rem;
-      display: none;
-      @media screen and (max-width: 768px){
-        display: flex;
-      }
-      span {
-        height: 3px;
-        width: 4rem;
-        background-color: var(--color-white);
-        z-index: 150;
-        border-radius: 3px;
-      }
+      justify-content: flex-start;
+      align-items: center;
+      gap: 5rem;
+      z-index: 2000;
+      left: 0;
+      top: -100rem;
+      padding-top: 15rem;
+      transition: all .4s ease-in-out;
     }
     .svg-icon {
-        height: 5rem;
-        width: 5rem;
-        mask-image: url(../../assets/mountain-logo.svg);
-        -webkit-mask-image: url(../../assets/mountain-logo.svg);
-        mask-size: cover;
-        -webkit-mask-size: cover;
-        background-color: var(--color-white);
+      height: 5rem;
+      width: 5rem;
+      mask-image: url(../../assets/mountain-logo.svg);
+      -webkit-mask-image: url(../../assets/mountain-logo.svg);
+      mask-size: cover;
+      -webkit-mask-size: cover;
+      background-color: var(--color-white);
+    }
+    .list {
+      display: flex;
+      align-items: center;
+      gap: 4rem;
+      @media screen and (max-width: 768px) {
+        flex-direction: column;
       }
-      .list {
-        display: flex;
-        align-items: center;
-        gap: 4rem;
-        @media screen and (max-width: 768px){
-            display: none;
-        }
-        .link {
-            font-size: 1.6rem;
-            color: var(--color-white);
-            cursor: pointer;
-            font-weight: 500;
-            letter-spacing: 0.5px;
-            text-decoration: none;
-            transition: all .3s ease;
-            &:hover {
-              color: var(--color-secondary);
-            }
+      .link {
+        font-size: 1.6rem;
+        color: var(--color-white);
+        cursor: pointer;
+        font-weight: 500;
+        letter-spacing: 0.5px;
+        text-decoration: none;
+        transition: all 0.3s ease;
+        &:hover {
+          color: var(--color-secondary);
         }
       }
+    }
+  }
+}
+.rotate-span {
+  span {
+    &:first-child {
+      transform: rotate(135deg) translateY(-250%);
+    }
+    &:nth-child(2) {
+      opacity: 0;
+    }
+    &:nth-child(3) {
+      transform: rotate(-135deg) translateY(300%);
+    }
+  }
+}
+.top-zero {
+  top: 0 !important;
 }
