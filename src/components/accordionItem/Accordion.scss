@@ -16,6 +16,12 @@
             font-weight: 500;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             color: var(--color-primary);
+            @media screen and (max-width: 768px){
+                font-size: 1.8rem;
+            }
+            @media screen and (max-width: 768px){
+                font-size: 1.6rem;
+            }
         }
     }
     &__description {
