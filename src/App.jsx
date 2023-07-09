@@ -16,7 +16,7 @@ function App() {
     const { pathname } = useLocation();
     return (
       <div className="App" style={{position: 'relative'}}>
-        <Navbar />
+        { pathname === '/' ? <Navbar /> : null }
         {pathname === "/" ? <Header /> : <DefaultHeader />}
         <Outlet />
         <Customize />
