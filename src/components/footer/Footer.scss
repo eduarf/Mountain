@@ -1,9 +1,15 @@
 .footer {
     padding: 8rem 10rem 0 8rem;
+    @media screen and (max-width: 768px) {
+        padding: 2rem 4rem 0 2rem;
+    }
     &__top {
         display: grid;
         grid-template-columns: repeat(3, minmax(0, 1fr));
         gap: 3rem;
+        @media screen and (max-width: 768px) {
+            grid-template-columns: repeat(1, minmax(0, 1fr));
+        }
         
     }
     &__adress {
@@ -57,6 +63,9 @@
     }
     &__about-us {
         padding: 0 6rem;
+        @media screen and (max-width: 768px) {
+            padding: 0;
+        }
         ul {
             list-style-type: none;
             display: flex;
@@ -84,6 +93,10 @@
             font-size: 1.6rem;
             font-weight: 400;
             color: var(--color-primary);
+            @media screen and (max-width: 640px) {
+                font-size: 1.4rem;
+                text-align: center;
+            }
         }
     }
 
