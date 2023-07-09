@@ -1,10 +1,15 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import Button from "../button/Button";
 import "./Navbar.scss";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const location = useLocation();
+
+  useEffect(() => {
+    setIsOpen(false);
+  }, [location]);
   const CustomLink = ({ to, name }) => {
     return (
       <Link to={to} className="link">
@@ -14,12 +19,15 @@ const Navbar = () => {
   };
   return (
     <div className="nav-container">
-      <div className={`hamburger ${isOpen ? 'rotate-span' : ''}`} onClick={() => setIsOpen(!isOpen)}>
+      <div
+        className={`hamburger ${isOpen ? "rotate-span" : ""}`}
+        onClick={() => setIsOpen(!isOpen)}
+      >
         <span></span>
         <span></span>
         <span></span>
       </div>
-      <nav className={`navbar ${isOpen ? 'top-zero' : ''}`}>
+      <nav className={`navbar ${isOpen ? "top-zero" : ""}`}>
         {/* Logo */}
         <div className="svg-icon"></div>
         {/* Menu */}
